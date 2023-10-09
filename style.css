@@ -1,0 +1,249 @@
+/* Reset some default browser styles */
+body, h1, h2, p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set a background color and font for the entire page */
+body {
+  background-color: #f2f2f2;
+  font-family: Arial, sans-serif;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+ 
+}
+
+/* Header Styles */
+header {
+  
+  color: #fff;
+  padding: 0%;
+}
+
+/* Navigation Menu Styles */
+nav {
+  background-color: #0b32df;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Container Styles */
+  /* Add more styles for your specific elements here */
+
+/* Container Styles with Border */
+/* Outer Container Styles with Padding */
+#outer-container {
+  padding: 20px; /* Add padding outside the blue border */
+  background-color: #f2f2f2; /* Set background color for the outer container */
+}
+
+
+/* Container Styles with Border */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  border: 2px solid #0b32df; /* Add a blue border */
+  box-sizing: border-box; /* Include padding and border in the total width/height */
+  padding: 10px; /* Add padding within the border */
+  text-align: center;
+}
+
+
+/* Media Queries for Responsive Design */
+/* Mobile-first styles (default) */
+.container {
+  width: 100%;
+}
+
+/* Tablet styles (for screens 768px and larger) */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 800px;
+  }
+}
+
+/* Desktop styles (for screens 1024px and larger) */
+@media screen and (min-width: 1024px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+@media screen and (max-width: 767px) {
+   
+  #box-container {
+    padding: 20px;
+    
+  }
+}
+.half-line {
+  top: 20px;
+  border: none;
+  border-top: 2px solid #d1cece;
+  position: relative;
+  
+}
+.or-text {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  justify-content: center;
+  background-color: white;
+  padding: 0 10px;
+}
+.payment-box {
+  width: 90%;
+  background: #004b8d;
+  border: none;
+  border-radius: 10px;
+  margin: 0.3rem 0;
+  padding: 0 1rem;
+  height: 40px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  cursor: pointer;
+  color: #fff;
+}
+/* Toggle-switch */
+.notification {
+  display: flex; /* Make its children flex items */
+  align-items: center; /* Vertically center its children */
+  text-align: center;
+  justify-content: center;
+
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width:35px;
+  height: 17px;
+  margin-left: 7px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 12px;
+  width: 12px;
+  left: 4px;
+  bottom: 3px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(16px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+/* Footer Styles */
+footer {
+  background-color: #f2f2f2;
+  text-align: center;
+  padding: 10px;
+  color: #a29e9e;
+}
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 5px;
+}
+
+/* Powered by Logo Styles */
+#Powered {
+  width: 150px;
+  height: 100px;
+}
+
+/* Add your custom CSS styles below this line */
+#rupay {
+  width: 1.2em;
+  height: 1.2em;
+  margin-right: 6px;
+
+}
+#Google,
+#Bhim
+{
+  width: 1.2em;
+  height: 1.2em;
+  margin-left: 8px;
+  margin-right: 6px;
+}
+#phonepe-logo{
+  width: 1.5em;
+  height: 1.5em;
+  margin-left: 4px;
+  margin-right: 6px;
+
+}
+#Paytm
+{
+  width: 2em;
+  height: 2em;
+  margin-left: 3px;
+
+}
+#prime
+{
+  max-width: 100%; /* Set the maximum width to 100% of its container */
+  height: 120px;    /* Allow the height to adjust proportionally */
+  margin:0;
+  padding: 0;
+}
+
